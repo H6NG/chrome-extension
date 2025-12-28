@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UBC Enhanced Quick Links</title>
+        <link rel="stylesheet" href="popup.css">
+        <script src="../popup/popup.js" defer></script>
+        <script src="../src/i18n.js" defer></script>
+        <script src="../src/search-content.js" defer></script>
+    </head>
+    <body>
+        <div id="popup-container">
+
+
+            <div class="only-once-at-the-beginning" id="warning">
+                
+                <div class="warning-box">
+                    
+                    <h3>This project is not affiliated with, endorsed by, or associated with the University of British Columbia (UBC)</h3>
+                    <button class="understood-rules" id="understood-button">Understood</button>
+
+                </div>
+                
+            </div>
+            <div class="links-grid" id="main-links">
+                <div class="links-column">
+                    <h2>UBC Boost</h2>
+                    <a href="#" id="rateUBCChromeExtension">Rate UBC Enhanced Chrome Extension</a>
+                    <a href="https://ubccard.ubc.ca/" target="_blank">UBC Card</a>
+                    <a href='#' id="searchbar"> Search Bar</a>
+                    <a href="#" id="otherlinks-btn">Other links</a>
+                    <h3>Download</h3>
+                    <a href="https://www.download.ubc.ca" target="_blank">Download App</a>
+                    <h3>Other Resources</h3>
+                    <a href="https://www.ubcplanner.com/" target="_blank">UBC Course Planner</a>
+                    <a href="https://www.ubcfinder.com/" target="_blank">UBC Course Finder</a>
+                    <h3>Online Community</h3>
+                    <a href="https://www.reddit.com/r/UBC/" target="_blank">UBC Subreddit</a>
+                    <a href="https://discord.gg/YhUHKKP" target="_blank">UBC Discord</a>
+                </div>
+                <div class="links-column">
+                    <h2>UBC Quick Links</h2>
+                    <a href="https://www.ubc.ca/" target="_blank">UBC Homepage</a>
+                    <a href="https://students.ubc.ca/" target="_blank">Student Service Center (SSC)</a>
+                    <a href="https://wd10.myworkday.com/wday/authgwy/ubc/login-saml2.htmld" target="_blank">UBC MyWorkday</a>
+                    <a href="https://canvas.ubc.ca/" target="_blank">UBC Canvas</a>
+                    <a href="https://www.library.ubc.ca/" target="_blank">UBC Library</a>
+                    <a href="https://www.maps.ubc.ca/" target="_blank">Campus Map</a>
+                    <a href="https://vancouver.housing.ubc.ca/" target="_blank">UBC Housing</a>
+                    <a href="https://bookstore.ubc.ca/" target="_blank">UBC Bookstore</a>
+                    <a href="https://food.ubc.ca/meal-plans/residence-meal-plan-all-access-dining/" target="_blank">UBC Meal Plan</a>
+                    <a href="https://ubcwiki.ca/" target="_blank">UBC Wiki</a>
+                    <h3>Settings</h3>
+                    <a href="#" id="settings-btn">Settings</a>
+                </div>
+            </div>
+
+            <div class="links-grid" id="otherlinks-panel" style="display:none;">
+                <div class="links-column">
+                    <h2>UBC Boost</h2>
+                    <a href="https://recreation.ubc.ca/fitness/memberships/" target="_blank">UBC Membership</a>
+                    <!-- <a href="https://webmail.student.ubc.ca" target="_blank">UBC WebMail</a> -->
+                    <!-- Online service center for card & UBCCard Value Plan https://secure.housing.ubc.ca/ -->
+                    <!-- Campus tour https://you.ubc.ca/tours-events/campus-tours/-->
+                    <!-- UPass https://upassbc.translink.ca/ for university students-->
+                    <!-- translink -->
+                    <!-- UBC VPN-->
+                    <!-- Course Library https://courses.library.ubc.ca/-->
+                    <!-- Piazza-->
+                    <!-- Menu at https://ubc.nutrislice.com/menu-->
+                     <!-- Where to get a compass card-->
+                    <!-- Ask AI for quick answers-->
+                    <!-- How can I contour Duo Cisco-->
+                    <!--Simplicity https://ubc-csm.symplicity.com/students/app/home-->
+                    <!-- UBC MyAccount Automatic Filling -->
+                    <!-- Quick Information Filled by the user. ES Advisor-->
+                    <!-- ADs -->
+                     <!-- UBC Latest News-->
+                      <!-- Report incident-->
+                    <!--https://us.prairielearn.com/-->
+                    <!-- UBC Grades Conversion https://students.ubc.ca/enrolment/courses/grades/-->
+                    <!-- Search Bar-->
+                    <!-- Warning: The UBC ECE is not linked to UBC directly. This Extension will never sell your data, and will never contact you for money-->
+                    <!--Credit-->
+                    <a href="https://students.ubc.ca/career/work-learn-program/" target="_blank">UBC Work Learn</a>
+                    <a href="https://students.ubc.ca/career/co-op/" target="_blank">UBC Job Postings</a>
+                    <a href="https://www.calendar.ubc.ca/vancouver/" target="_blank">UBC Calendar</a>
+                    <a href="https://www.myaccount.ubc.ca/" target="_blank">UBC MyAccount</a>
+                    <a href="https://news.ubc.ca/" target="_blank">UBC News</a>
+                    <a href="https://upassbc.translink.ca/" target="_blank">U-Pass Translink</a>
+                    <a href="https://piazza.com/" target="_blank">Piazza.com</a>
+                    <a href="https://us.prairielearn.com/" target="_blank">US PraireLearn</a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1" target="_blank">only when locked-in</a>
+                    <a href="#" id="backButton">← Back</a>
+                    
+                </div>
+                
+                <div class="links-column">
+                    <h2>UBC Quick Links</h2>
+                    <a href="#" id="notetaker">Quick Notes</a>
+                    <a href="#" id="report_issue_button">Report Issues</a>
+                </div>
+                <!--<div style="height:30px; width:100%; display:none;"></div>-->
+            </div>
+            <div id="quick_notes" style="display: none;">
+
+                <h2>Quick Notes</h2>
+
+                <textarea id="text_area" placeholder="Notes"></textarea>
+                <h4 id="isSaved"></h4>
+                <div style="height:30px; width:100%; display:flex;"></div>
+                <a href="#" id="quick_back_btn">← Back</a>
+
+            </div>
+            <div id="report_issues" style="display: none;">
+
+                <h2>Want to report ?</h2>
+
+                <input type="email" placeholder="Email" id="email_report" required>
+
+                <input type="text" placeholder="Subject" id="subject_report" required>
+                
+                <textarea id="reportMessage" placeholder="Message" maxlength="200" required></textarea>
+                <h2 class="nb_of_character"></h2>
+
+                <div class="footer">
+                    <span class="nb_of_character" id="charCount">0 / 200</span>
+                    <button id="send-btn">Send</button>
+                </div>
+                <div style="height:30px; width:100%; display:flex;"></div>
+                <a href="#" id="report_back_btn">← Back</a>
+
+            </div>
+            <div class="search-class" id="search-panel" style="display:none;">
+
+                <h2 class="searchwordstyle">Search Bar</h2>
+
+                <div class="searchbox">
+                    <input type="text" id="searchInput" placeholder="" autocomplete="off">
+                    <button id="searchButton">Search</button>
+                </div>
+                <div class="search-content"></div>
+                <div style="height:30px; width:100%; display:flex;"></div>
+                <a href="#" id="back-btn">← Back</a>
+                
+            </div>
+            <div class="setting-class" id="settings-panel" style="display:none;">
+                <h2>Settings</h2>
+                <form id="settings-form">
+                    <label for="language"><strong>Language (Not working yet.)</strong></label>
+                    <select id="language" name="language">
+                        <option>English (default)</option>
+                        <option>Mandarin</option>
+                        <option>French</option>
+                        <option>Spanish</option>
+                        <option>Arabic</option>
+                        <option>Hindi</option>
+                        <option>Vietnamese</option>
+                        <option>Russian</option>
+                        <option>Portuguese</option>
+                        <option>Japanese</option>
+                        <option>Korean</option>
+                        <option>German</option>
+                    </select>
+
+                    <label for="faculty"><strong>Faculty</strong></label>
+                    <select id="faculty" name="faculty">
+                        <option>All / General (default)</option>
+                        <option>Applied Science</option>
+                        <option>Arts</option>
+                        <option>Law</option>
+                        <option>Business</option>
+                        <option>Dentistry</option>
+                        <option>Education</option>
+                        <option>Forestry</option>
+                        <option>Graduate and Postdoctoral Studies</option>
+                        <option>Land and Food Systems</option>
+                        <option>Medicine</option>
+                        <option>Pharmaceutical Sciences</option>
+                        <option>Science</option>
+                    </select>
+
+                    <label for="program"><strong>Program</strong></label>
+                    <select id="program" name="program">
+                        <option>All / General (default)</option>
+                        <option>Bachelor of Applied Science (BASc): Engineering, Architecture, Landscape Architecture</option>
+                        <option>Bachelor of Arts (BA): Anthropology, Economics, English, Psychology, History, Political Science, BSW, BMS</option>
+                        <option>Bachelor of Science (BSc): Chemistry, Computer Science, Mathematics, Physics, Biology, Microbiology</option>
+                        <option>Bachelor of Commerce (BCom): Accounting, Finance, Marketing, HR</option>
+                        <option>Bachelor of Kinesiology</option>
+                        <option>Bachelor of Forestry</option>
+                        <option>Bachelor of Fine Arts</option>
+                        <option>Bachelor of Music</option>
+                        <option>Bachelor of Urban Forestry</option>
+                        <option>Doctors of Medicine (MD)</option>
+                    </select>
+
+                    <label for="campus"><strong>Campus</strong></label>
+                    <select id="campus" name="campus">
+                        <option>Vancouver (Default)</option>
+                        <option>Okanagan</option>
+                    </select>
+                    <!-- Add a dark mode toggle-->
+
+                    <!-- Professors, Graduates, Alumni-->
+                    <button type="button" id="settings-done-btn">Done</button>
+                </form>
+                <a href="#" id="backButton2">← Back</a>
+            </div>
+        </div>
+    </body>
+</html>
